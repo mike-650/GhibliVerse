@@ -13,8 +13,10 @@ function Carousel() {
   return (
     <div>
       <swiper-container
-        navigation="true"
-        pagination="true"
+        navigation='true'
+        pagination='true'
+        loop='true'
+        autoplay='{"delay":4000}'
       >
         <swiper-slide>
           <div>
