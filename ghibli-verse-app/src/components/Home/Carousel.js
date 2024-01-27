@@ -16,7 +16,7 @@ function Carousel() {
         navigation='true'
         pagination='true'
         loop='true'
-        autoplay='{"delay":4000}'
+      // autoplay='{"delay":4000}' UNCOMMENT TO ACTIVATE AUTOPLAY
       >
         <swiper-slide>
           <div>
@@ -24,8 +24,8 @@ function Carousel() {
               src={image1}
               alt='First carousel studio ghibli film'
             />
-            <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-              <p class="text-white text-2xl font-bold">Text Over Image 1</p>
+            <div class="absolute top-0 left-20 bottom-0 flex items-center justify-center w-80 bg-gray-100">
+              <p class="text-white text-2xl font-bold">Spirited Away</p>
             </div>
           </div>
         </swiper-slide>
@@ -35,8 +35,8 @@ function Carousel() {
               src={image2}
               alt='First carousel studio ghibli film'
             />
-            <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-              <p class="text-white text-2xl font-bold">Text Over Image 2</p>
+            <div class="absolute top-0 left-20 bottom-0 flex items-center justify-center w-80 bg-gray-100">
+              <p class="text-white text-2xl font-bold">Princess Mononoke</p>
             </div>
           </div>
         </swiper-slide>
@@ -46,8 +46,8 @@ function Carousel() {
               src={image3}
               alt='First carousel studio ghibli film'
             />
-            <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-              <p class="text-white text-2xl font-bold">Text Over Image 3</p>
+            <div class="absolute top-0 left-20 bottom-0 flex items-center justify-center w-80 bg-gray-100">
+              <p class="text-white text-2xl font-bold">Ponyo</p>
             </div>
           </div>
         </swiper-slide>
