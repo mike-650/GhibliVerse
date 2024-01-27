@@ -1,7 +1,14 @@
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+
+import Home from './Components/Home/Home';
 
 function App() {
   return (
-    <div>GhibliVerse!</div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
