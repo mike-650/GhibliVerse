@@ -11,9 +11,17 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS films (
                     id INTEGER PRIMARY KEY,
                     title TEXT,
                     director TEXT,
-                    description TEXT,
-                    release_date 
+                    description TEXT
                 )''')
+
+cursor.execute('''CREATE TABLE IF NOT EXISTS characters (
+                    id INTEGER PRIMARY KEY,
+                    name TEXT,
+                    age INTEGER,
+                    description TEXT,
+                    film_id INTEGER,
+                    FOREIGN KEY (film_id) REFERENCES films(id)
+                ) ''')
 
 # Add more tables if needed
 
