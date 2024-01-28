@@ -14,7 +14,8 @@ function Carousel() {
         navigation='true'
         pagination='true'
         loop='true'
-      // autoplay='{"delay":4000}' UNCOMMENT TO ACTIVATE AUTOPLAY
+        // autoplay='{"delay":3000}'
+        // UNCOMMENT TO ACTIVATE AUTOPLAY
       >
         <swiper-slide>
           <div>
