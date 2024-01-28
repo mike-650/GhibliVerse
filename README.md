@@ -2,6 +2,20 @@
 
 <img width="1440" alt="Screen Shot 2024-01-27 at 11 06 05 PM" src="https://github.com/mike-650/GhibliVerse/assets/113942124/51c371d0-2201-4472-801b-2a3b3e6a688a">
 
+## Meet the Dev : 
+
+**Mike Salariosa**
+
+<a href="url"><img src="https://user-images.githubusercontent.com/43020644/232277141-81ffcafc-f5e5-4ea8-a545-15f674cd78b6.png" align="left" height="100" width="100" ></a>
+
+[Github](https://github.com/mike-650)
+
+[Linkedin](https://www.linkedin.com/in/michael-s-688653118/)
+
+<br>
+<br>
+
+
 ## Introduction
 Heyo! Thanks for checking out my personal project GhibliVerse, as of 1-27-2024 GhibliVerse is still in developement and will slowly but surely become available for public use! In the meantime, here are some of the core features I intend to create for this application:
 * Information of all Studio Ghibli films
