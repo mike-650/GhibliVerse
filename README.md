@@ -32,6 +32,7 @@ Heyo! Thanks for checking out my personal project GhibliVerse, as of 1-27-2024 G
 ### Backend
 - Python
   - Flask
+  - SQLAlchemy
 - Database
   - SQLite
 
