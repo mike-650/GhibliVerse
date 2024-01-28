@@ -1,6 +1,6 @@
 # Welcome to GhibliVerse! 
 
-<img width="1440" alt="Screen Shot 2024-01-27 at 11 06 05 PM" src="https://github.com/mike-650/GhibliVerse/assets/113942124/51c371d0-2201-4472-801b-2a3b3e6a688a">
+![ScreenRecording2024-01-28at12 18 08AM-ezgif com-video-to-gif-converter](https://github.com/mike-650/GhibliVerse/assets/113942124/66e4e87a-ac48-4c8f-89c6-dd9b6304e06f)
 
 ## Meet the Dev : 
 
