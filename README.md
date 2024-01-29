@@ -1,8 +1,8 @@
-# Welcome to GhibliVerse! 
+# Welcome to GhibliVerse!
 
 ![ScreenRecording2024-01-28at12 18 08AM-ezgif com-video-to-gif-converter](https://github.com/mike-650/GhibliVerse/assets/113942124/66e4e87a-ac48-4c8f-89c6-dd9b6304e06f)
 
-## Meet the Dev : 
+## Meet the Dev :
 
 **Mike Salariosa**
 
@@ -37,4 +37,4 @@ Heyo! Thanks for checking out my personal project GhibliVerse, as of 1-27-2024 G
   - SQLite
 
 ## Purpose
-I've always wanted to create a fun personal project that I could personally use and reference in my own daily life, that being said a fun fact about myself is that I love Studio Ghibli films whole heartedly and growing up they were films I would watch endlessly. I own almost every single film in Blu-Ray and even have a tattoo sleeve of all of my favorite ghibli characters. This fullstack application presents a fun challenge as I will try to implement new features I haven't created before and for it be about content I personally enjoy shall make this process very exciting.
+I've always wanted to create a fun personal project that I could personally use and reference in my own daily life, that being said a fun fact about myself is that I love Studio Ghibli films whole heartedly and growing up they were films I would watch endlessly. I own almost every single film in Blu-Ray and even have a tattoo sleeve of all of my favorite ghibli characters. This fullstack application presents a fun challenge as I will try to implement new features I haven't created before.
