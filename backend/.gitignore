@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Local configuration files
+.env
+.DS_Store
+
+# Compiled Python files
+*.pyc
+
+# Python cache
+__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite
+
+# Testing database
+ghibli.db
+
+# Environment variable file
+.env
