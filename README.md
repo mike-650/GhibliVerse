@@ -26,7 +26,7 @@ Heyo! Thanks for checking out my personal project GhibliVerse, as of 1-27-2024 G
 ### Frontend
 - HTML
 - Tailwind CSS
-- JavaScript
+- JavaScript/TypeScript
   - React.js
 
 ### Backend
