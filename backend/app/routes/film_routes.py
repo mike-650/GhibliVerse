@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from app.models import Film
+from backend.app.models.models import Film
 from app import db
 
 film_routes = Blueprint('film_routes', __name__)

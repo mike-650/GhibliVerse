@@ -1,5 +1,5 @@
-from flask import Blueprint, jsonify, request
-from app.models import Character
+from flask import Blueprint, jsonify
+from backend.app.models.models import Character
 
 character_routes = Blueprint('character_routes', __name__)
 
