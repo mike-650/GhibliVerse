@@ -1,5 +1,5 @@
 from app import db
-from app.models import Film, Character
+from app.models.models import Film, Character
 
 def seed_data():
     # Add seed data here
