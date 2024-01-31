@@ -10,7 +10,7 @@ export const fetchFilmsRequest = () => ({
 
 export const fetchFilmsSuccess = (films) => ({
   type: FETCH_FILMS_SUCCESS,
-  payload: films,
+  payload: films.films,
 });
 
 export const fetchFilmsFailure = (error) => ({

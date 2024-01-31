@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, request
 from app.models.models import Film
 from app import db
 
@@ -7,7 +7,7 @@ film_routes = Blueprint('film_routes', __name__)
 @film_routes.route('/', methods=['GET'])
 def get_films():
     films = Film.query.all()
-    return jsonify({'films': [{'id': film.id, 'title': film.title, 'director': film.director, 'description': film.description} for film in films]})
+    return {'films': [{'id': film.id, 'title': film.title, 'director': film.director, 'description': film.description} for film in films]}
 
 @film_routes.route('/films', methods=['POST'])
 def add_film():
@@ -20,6 +20,6 @@ def add_film():
     db.session.add(new_film)
     db.session.commit()
 
-    return jsonify({'message': 'Film added successfully'})
+    return {'message': 'Film added successfully'}
 
 # Add more film routes as needed
