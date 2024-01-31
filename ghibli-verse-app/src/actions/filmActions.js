@@ -1,4 +1,19 @@
-// import { INCREMENT, DECREMENT } from '../constants/actionTypes'; // ! TBD
-import { FETCH_FILMS } from "../constants/filmConstants";
+// Action types
+export const FETCH_FILMS_REQUEST = 'FETCH_FILMS_REQUEST';
+export const FETCH_FILMS_SUCCESS = 'FETCH_FILMS_SUCCESS';
+export const FETCH_FILMS_FAILURE = 'FETCH_FILMS_FAILURE';
 
-export const fetchFilms = () => ({ type: FETCH_FILMS });
+// Action creators
+export const fetchFilmsRequest = () => ({
+  type: FETCH_FILMS_REQUEST,
+});
+
+export const fetchFilmsSuccess = (films) => ({
+  type: FETCH_FILMS_SUCCESS,
+  payload: films,
+});
+
+export const fetchFilmsFailure = (error) => ({
+  type: FETCH_FILMS_FAILURE,
+  payload: error,
+});
