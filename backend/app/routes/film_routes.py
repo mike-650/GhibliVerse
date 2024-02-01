@@ -7,7 +7,7 @@ film_routes = Blueprint('film_routes', __name__)
 @film_routes.route('/', methods=['GET'])
 def get_films():
     films = Film.query.all()
-    return {'films': [{'id': film.id, 'title': film.title, 'director': film.director, 'description': film.description} for film in films]}
+    return {'films': [{'id': film.id, 'title': film.title, 'director': film.director, 'description': film.description, 'imageURL': film.imageURL} for film in films]}
 
 @film_routes.route('/films', methods=['POST'])
 def add_film():
