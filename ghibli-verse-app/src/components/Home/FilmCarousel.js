@@ -4,7 +4,7 @@ import { fetchFilms } from "../../thunks/filmThunks";
 
 function FilmCarousel() {
   const dispatch = useDispatch();
-  const films = useSelector(state => state.film.films); // Assuming your reducer stores films in the state
+  const films = useSelector(state => state.film.films);
 
   // Use local state to manage loading and error states
   const [loading, setLoading] = useState(true);
@@ -36,12 +36,19 @@ function FilmCarousel() {
 
   return (
     <div>
-      <h1>Film List</h1>
-      <ul>
-        {films?.map(film => (
-          <li key={film.id}>{film.title}</li>
+      <swiper-container
+        navigation='true'
+        pagination='true'
+        slides-per-view="3"
+        slides-per-group="3"
+        space-between="100px"
+        >
+        {films.map(film => (
+          <swiper-slide key={film.id}>
+            <img src={film.imageURL} alt={film.title} />
+          </swiper-slide>
         ))}
-      </ul>
+      </swiper-container>
     </div>
   );
 };
