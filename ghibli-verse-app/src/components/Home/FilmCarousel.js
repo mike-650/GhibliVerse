@@ -38,14 +38,19 @@ function FilmCarousel() {
     <div>
       <swiper-container
         navigation='true'
-        pagination='true'
+        // pagination='true'
         slides-per-view="3"
         slides-per-group="3"
-        space-between="100px"
-        >
+        space-between="50px"
+      >
         {films.map(film => (
           <swiper-slide key={film.id}>
-            <img src={film.imageURL} alt={film.title} />
+            <div className="flex flex-col items-center text-center">
+              <img src={film.imageURL} alt={film.title}
+                className="rounded-md h-96 w-64"
+              />
+              <p>{film.title}</p>
+            </div>
           </swiper-slide>
         ))}
       </swiper-container>

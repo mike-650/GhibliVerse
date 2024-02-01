@@ -9,7 +9,7 @@ register();
 
 function Carousel() {
   return (
-    <div>
+    <div className='mb-40'>
       <swiper-container
         navigation='true'
         pagination='true'
