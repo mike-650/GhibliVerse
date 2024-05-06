@@ -1,5 +1,4 @@
 import { fetchFilmsRequest, fetchFilmsSuccess, fetchFilmsFailure } from '../actions/filmActions';
-import developmentConfig from '../config/development'
 
 export const fetchFilms = () => {
   return async (dispatch) => {
