@@ -1,14 +1,56 @@
+
 from app import db
 from app.models.models import Film, Character
 
 def seed_data():
     # Add seed data here
     if not Film.query.first():
-        # Add seed data here
-        film1 = Film(title='Spirited Away', director='Hayao Miyazaki', description="Chihiro's family is moving to a new house, but when they stop on the way to explore an abandoned village, her parents undergo a mysterious transformation and Chihiro is whisked into a world of fantastic spirits ruled over by the sorceress Yubaba.")
-        film2 = Film(title="Howl's Moving Castle", director='Hayao Miyazaki', description="When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.")
+        # Create a list of dictionaries representing film data
+        film_data_list = [
+            {
+                'title': 'Spirited Away',
+                'director': 'Hayao Miyazaki',
+                'description': "Chihiro's family is moving to a new house, but when they stop on the way to explore an abandoned village, her parents undergo a mysterious transformation and Chihiro is whisked into a world of fantastic spirits ruled over by the sorceress Yubaba.",
+                'imageURL': 'https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg'
+            },
+            {
+                'title': "Howl's Moving Castle",
+                'director': 'Hayao Miyazaki',
+                'description': "When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.",
+                'imageURL': 'https://m.media-amazon.com/images/M/MV5BNmM4YTFmMmItMGE3Yy00MmRkLTlmZGEtMzZlOTQzYjk3MzA2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg'
+            },
+            {
+                'title': "My Neighbor Totoro",
+                'director': "Hayao Miyazaki",
+                'description': "When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.",
+                'imageURL': 'https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg'
+            },
+            {
+                'title': "Kiki's Delivery Service",
+                'director': "Hayao Miyazaki",
+                'description': "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
+                'imageURL': 'https://m.media-amazon.com/images/M/MV5BYTQ1ZTM1ZTgtN2Q2Ny00YjFkLTliNjEtN2I1ZmY5ZTY1OTEzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg'
+            },
+            {
+                'title': "Castle in the Sky",
+                'director': "Hayao Miyazaki",
+                'description': "A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.",
+                'imageURL': 'https://m.media-amazon.com/images/M/MV5BNDFhZmY2NTgtMzljYy00MTlhLTgyMjItNTEwZWJkYThhYzkyXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg'
+            },
+            {
+                'title': "Ponyo",
+                'director': "Hayao Miyazaki",
+                'description': "A five-year-old boy develops a relationship with Ponyo, a young goldfish princess who longs to become a human after falling in love with him.",
+                'imageURL': 'https://m.media-amazon.com/images/M/MV5BOTc3YmM3N2QtODZkMC00ZDE5LThjMTQtYTljN2Y1YTYwYWJkXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_FMjpg_UX1000_.jpg'
+            }
+        ]
 
-        db.session.add_all([film1, film2])
+        # Add films to the database
+        for film_data in film_data_list:
+            film = Film(**film_data)
+            db.session.add(film)
+
+        # Commit changes to the database
         db.session.commit()
         print("Successfully seeded Films!")
 

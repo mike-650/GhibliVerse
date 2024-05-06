@@ -6,9 +6,7 @@ export const fetchFilms = () => {
 
     try {
       const response = await fetch(`http://localhost:5000/api/films/`);
-      console.log(response)
       const data = await response.json();
-      console.log(data)
       dispatch(fetchFilmsSuccess(data));
     } catch (error) {
       dispatch(fetchFilmsFailure(error.message));

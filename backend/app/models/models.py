@@ -5,6 +5,8 @@ class Film(db.Model):
     title = db.Column(db.String(255), nullable=False)
     director = db.Column(db.String(255), nullable=False)
     description = db.Column(db.Text, nullable=True)
+    # Will change to either static assets or host images on AWS
+    imageURL = db.Column(db.String(255), nullable=False)
 
     # Define the one-to-many relationship
     characters = db.relationship('Character', backref='film', lazy=True)
